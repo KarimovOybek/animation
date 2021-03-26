@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.img{
+    position: relative;  
+    overflow: hidden;  
+}
+.text{
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    left: -100%;
+    transition: 1s;
+}
+.title{
+    font-size: 30px;
+    font-family: cursive;
+    text-transform: capitalize;
+    padding: 60px 30px 40px 30px;
+}
+.txt{
+    font-size: 20px;
+    padding: 0 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.img:hover .text{
+    left: 0;
+}
